@@ -1,0 +1,14 @@
+.products .card-img-top{
+	max-height: 222px;
+	/* max-width: 222px; */
+	/* height: 222px !important; */
+	width: 100% !important;
+	object-fit: contain;
+	object-position: center center;
+	margin: 0 auto;
+
+}
+.card{
+	width: calc(25% - 20px);
+	margin-bottom: 20px;
+}
