@@ -13,6 +13,9 @@
 	<?php include "./components/header.php" ?>
 
 	<section class="container">
+		<?php 
+			if (isset($_SESSION['email']) && $_SESSION['email'] == 'mraimaganbetov@gmail.com') {
+		?>
 		<h1>Hello, <?php echo $_SESSION['firstname']." ".$_SESSION['lastname']; ?></h1>
 		<form action="./server/products/upload.php" method="POST">
 			<div class="mb-3">
@@ -51,6 +54,19 @@
 			<button type="submit" class="btn btn-primary">Upload</button>
 		</form>
 
+		<?php 
+			} else {
+		?>
+		<h3>You have not an access to the database, please leave this page.</h3>
+		<?php 
+			}
+		?>
 	</section>
+		
+	<?php 
+		include './components/login-modal.php';
+		include './components/register-modal.php';
+	?>
+	<script src="./js/index.js"></script>
 </body>
 </html>

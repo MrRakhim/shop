@@ -12,3 +12,7 @@
 	width: calc(25% - 20px);
 	margin-bottom: 20px;
 }
+a.card-title-link {
+	color: #3d3a3a !important;
+	text-decoration: none;
+}

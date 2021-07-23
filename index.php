@@ -25,7 +25,9 @@
 		<div class="card">
 			<img src="<?php echo $row -> image; ?>" class="card-img-top" alt="...">
 			<div class="card-body">
-				<h5 class="card-title"><?php echo $row -> title; ?></h5>
+				<a href="./detail.php?id=<?php echo $row -> id; ?>" class="card-title-link">
+					<h5 class="card-title"><?php echo $row -> title; ?></h5>
+				</a>
 			</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">Price: $<?php echo $row -> price; ?></li>
