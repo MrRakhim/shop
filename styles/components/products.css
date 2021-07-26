@@ -16,3 +16,41 @@ a.card-title-link {
 	color: #3d3a3a !important;
 	text-decoration: none;
 }
+.list-group { 
+	position: relative;
+}
+.save-product-btn {
+	position: absolute;
+	right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.save-product-btn i svg{
+	color: #ff0000a6;
+}
+.save-product-btn, .save-product-btn i {
+	display: flex;
+	align-items: center;
+}
+
+.save-product-btn:hover i svg {
+	color: #000000;
+}
+
+
+/* CART PRODUCTS PROPERTIES */
+
+.cart-products {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.cart-products .card {
+	width: 100%;
+}
+h1.cart-title {
+	text-align: center;
+	margin-top: 50px;
+}
+/* CART PRODUCTS PROPERTIES */

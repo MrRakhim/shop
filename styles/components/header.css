@@ -1,0 +1,14 @@
+.nav-link, .nav-link i {
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-link i svg {
+	margin-right: 5px;
+	color: #ffffff8c;
+}
+
+.nav-link:hover i svg {
+	color: rgba(255,255,255,.75);
+}
